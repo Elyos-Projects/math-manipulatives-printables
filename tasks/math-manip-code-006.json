@@ -1,0 +1,34 @@
+{
+  "id": "math-manip-code-006",
+  "title": "Large-print + high-contrast variants of all four core families",
+  "project": "math-manipulatives-printables",
+  "type": "code",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["education", "mathematics", "open-content", "accessibility"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Low-vision learners and learners with visual processing differences need manipulatives with larger numerals and higher contrast than the standard variant. The project's style guide already mandates large-print and high-contrast as required variants, but the generator engine's core implementation does not yet specialise these beyond scaling. A dedicated implementation is needed that applies accessibility-specific rules: minimum numeral size, maximum contrast (black on white or white on black), and thicker cut guides.",
+  "objective": "Implement large-print and high-contrast generator variants for all four core manipulative families, reviewed and signed off by an accessibility reviewer.",
+  "acceptanceCriteria": [
+    "Large-print variant increases numeral/label size to at least 24pt equivalent at the printed physical size; all other dimensions scale proportionally from the spec.",
+    "High-contrast variant uses only black (#000000) and white (#FFFFFF); no other colours; numerals and cut guides have sufficient stroke weight to be legible on a standard office printer.",
+    "Both variants pass the automated verification harness (dimensions and relationships unchanged from spec).",
+    "Both variants pass accessibility sub-checks: contrast ratio > 7:1 (WCAG AAA) for the high-contrast variant; colour-blind simulation confirms no information loss.",
+    "Variants are generated automatically by the generator engine when the spec includes 'large-print' or 'high-contrast' in its colour-mode list.",
+    "Reviewed and signed off by an accessibility reviewer; sign-off recorded.",
+    "MIT-licensed; all commits DCO-signed; passes pnpm build, pnpm test, and CI gate."
+  ],
+  "resources": [
+    "tasks/math-manip-code-001.json -- generator engine",
+    "tasks/math-manip-design-002.json -- colour-blind-safe design system",
+    "tasks/math-manip-style-001.json -- style guide v1 (large-print and high-contrast requirements)"
+  ],
+  "output": "Large-print and high-contrast generator variants integrated into the engine, with example output PDFs for all four families, in a pull request, MIT-licensed.",
+  "requestor": "jdev1977",
+  "verifiedNeed": true,
+  "outputLicense": "MIT"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "math-manip-design-002",
+  "title": "Colour-blind-safe palette + grayscale/ink-saver design system",
+  "project": "math-manipulatives-printables",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["education", "mathematics", "open-content", "accessibility"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "As the project expands from one manipulative family to four, a consistent colour and visual-encoding system is essential. The system must be colour-blind-safe (the most common form of colour blindness affects roughly 8% of males), must degrade gracefully to grayscale on black-and-white printers, and must provide an ink-saver outline mode for low-ink situations. Without a formal design system, individual generator modules will make inconsistent choices and some outputs will be inaccessible.",
+  "objective": "Define and publish a colour-blind-safe colour palette and a full grayscale/ink-saver design system for use across all manipulative families, with accessibility review sign-off.",
+  "acceptanceCriteria": [
+    "Defines a primary colour palette of at least 6 named colours that passes Okabe-Ito colour-blind simulation (distinguishable under protanopia, deuteranopia, and tritanopia).",
+    "Defines luminance values for each colour such that grayscale renderings (via luminance mapping) preserve distinguishability between any two colours used together in a single manipulative.",
+    "Defines an ink-saver mode: outline-only with hatching or pattern fills replacing solid colours; patterns are distinguishable in black-and-white.",
+    "Palette and patterns are specified in a machine-readable form usable by the generator engine (e.g. JSON or TypeScript constants).",
+    "Reviewed and signed off by a qualified accessibility reviewer; sign-off recorded in the document.",
+    "Published CC-BY-4.0."
+  ],
+  "resources": [
+    "tasks/math-manip-style-001.json -- style guide v1 (colour mode requirements)",
+    "tasks/math-manip-research-001.json -- open-asset license clearance (palette license)",
+    "Okabe-Ito colour-blind-safe palette reference",
+    "WCAG 2.x contrast guidance"
+  ],
+  "output": "A design-system document (design/colour-palette-design-system.md) with a companion machine-readable palette file (design/palette.json), CC-BY-4.0, with accessibility reviewer sign-off recorded.",
+  "requestor": "jdev1977",
+  "verifiedNeed": true,
+  "outputLicense": "CC-BY-4.0"
+}

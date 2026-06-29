@@ -1,0 +1,31 @@
+{
+  "id": "math-manip-writing-001",
+  "title": "Print-and-use instructions + recommended print settings",
+  "project": "math-manipulatives-printables",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["education", "mathematics", "open-content", "accessibility"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "A dimensionally correct PDF is only useful if the person printing it knows how to print it correctly. The most common failure mode is printing with 'fit to page' scaling enabled, which silently reduces the manipulative to the wrong size. Educators in under-resourced settings often share one printer among many classrooms and cannot be assumed to be technically experienced. A simple, clear print-and-use instruction sheet must accompany the cold-start fraction-tile set before it is distributed.",
+  "objective": "Write clear, jargon-free print-and-use instructions and recommended printer settings for the fraction-tile set, covering both A4 and US Letter, for educators and families using a standard office or home printer.",
+  "acceptanceCriteria": [
+    "Explains how to verify the calibration bar after printing (measure the 100 mm bar with a ruler; acceptable range stated) and what to do if it measures incorrectly (check 'actual size' / 100% scale setting).",
+    "Provides step-by-step instructions to disable 'fit to page' / 'shrink to fit' scaling in common printer dialogs (at minimum: Windows print dialog, macOS print dialog, Adobe Acrobat Reader).",
+    "Recommends paper stock (standard 80 gsm office paper minimum; cardstock optional for durability) and notes that colour printing is optional -- the grayscale version is fully functional.",
+    "Includes cutting guidance: scissors following the cut-guide lines; notes that lamination is optional but recommended for durability.",
+    "Is licensed CC-BY-4.0, written at a reading level accessible to non-specialist educators and caregivers."
+  ],
+  "resources": [
+    "tasks/math-manip-data-001.json -- cold-start fraction-tile set this document accompanies",
+    "tasks/math-manip-style-001.json -- style guide v1 (calibration bar specification)"
+  ],
+  "output": "A print-and-use instruction document (docs/print-and-use-instructions.md), CC-BY-4.0, intended to be bundled with or linked alongside the fraction-tile PDF set.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

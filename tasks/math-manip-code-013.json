@@ -1,0 +1,31 @@
+{
+  "id": "math-manip-code-013",
+  "title": "Print-saver layouts (max pieces per sheet) per family",
+  "project": "math-manipulatives-printables",
+  "type": "code",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["education", "mathematics", "open-content", "tooling"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Standard layouts prioritise visual clarity and ease of cutting, with generous spacing between pieces. For high-volume use -- a teacher printing 30 class sets, or a programme printing for an entire school -- paper and ink costs matter significantly. A print-saver layout packs the maximum number of pieces per sheet while maintaining the calibration bar and safe margins, reducing the number of pages required per set.",
+  "objective": "Implement a print-saver layout mode for the generator engine that maximises pieces per sheet for each manipulative family while maintaining all style-guide requirements.",
+  "acceptanceCriteria": [
+    "Print-saver layout mode is activated via a spec flag (e.g. 'layout: print-saver').",
+    "Maximises pieces per sheet using a bin-packing or strip-packing approach while respecting: safe margins, calibration bar placement, and minimum spacing between cut guides.",
+    "All standard variants (A4/Letter x colour/grayscale/ink-saver) are supported in print-saver mode.",
+    "Print-saver output passes the verification harness: dimensional correctness is unchanged (the packing only changes position, not size).",
+    "MIT-licensed; all commits DCO-signed; passes pnpm build, pnpm test, and CI gate."
+  ],
+  "resources": [
+    "tasks/math-manip-code-001.json -- parametric generator engine (layout mode to extend)",
+    "tasks/math-manip-style-001.json -- style guide v1 (safe margins and calibration bar requirements)"
+  ],
+  "output": "A print-saver layout mode integrated into the generator engine, with tests and example outputs showing increased piece density, in a pull request, MIT-licensed.",
+  "requestor": "jdev1977",
+  "verifiedNeed": true,
+  "outputLicense": "MIT"
+}

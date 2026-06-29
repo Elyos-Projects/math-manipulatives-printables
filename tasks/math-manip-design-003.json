@@ -1,0 +1,32 @@
+{
+  "id": "math-manip-design-003",
+  "title": "Tactile/braille-friendly manipulative variants (sibling project?)",
+  "project": "math-manipulatives-printables",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["education", "mathematics", "open-content", "accessibility"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "Blind and low-vision learners who cannot benefit from a printed visual manipulative are not currently served by this project. Tactile variants (raised lines, embossed patterns, braille labels) require different production methods (swell paper, embossing, 3D printing) and are substantially more complex than standard printables. Before committing to full implementation, a scoping design spec is needed to determine whether this is in-scope for the project or should become a sibling project.",
+  "objective": "Produce a scoping design spec for tactile and braille-friendly manipulative variants, assessing feasibility, required production methods, and whether this is in-scope or a sibling project, reviewed by an accessibility expert.",
+  "acceptanceCriteria": [
+    "Assesses at least three production methods for tactile output: swell/capsule paper (microcapsule heat-activated), home embossing with a Cricut or similar, and 3D-printable STL files.",
+    "For each method: estimates cost, equipment required, accessibility level achieved, and whether it fits the project's 'ordinary printer' constraint.",
+    "Proposes a concrete recommendation: extend this project, create a sibling project, or defer with a stated reason.",
+    "Reviewed and signed off by a qualified accessibility expert with experience in visual-impairment education; reviewer recorded.",
+    "Published CC-BY-4.0."
+  ],
+  "resources": [
+    "tasks/math-manip-style-001.json -- style guide v1 (in-scope production constraints)",
+    "PLAN.md (this repo) -- non-goals section (ordinary printer constraint)",
+    "APH (American Printing House for the Blind) guidelines for tactile graphics"
+  ],
+  "output": "A tactile-variant scoping design spec (design/tactile-braille-scoping-spec.md), CC-BY-4.0, with feasibility assessment, production-method comparison, and a concrete recommendation, with accessibility-expert sign-off.",
+  "requestor": "jdev1977",
+  "verifiedNeed": true,
+  "outputLicense": "CC-BY-4.0"
+}

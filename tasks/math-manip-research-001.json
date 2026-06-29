@@ -1,0 +1,31 @@
+{
+  "id": "math-manip-research-001",
+  "title": "Open-asset license clearance (fonts + palettes)",
+  "project": "math-manipulatives-printables",
+  "type": "research",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["education", "mathematics", "open-content", "research"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Every printable in this project must embed only fonts and use only colour palettes whose licenses permit free redistribution, derivative works, and commercial and non-commercial use without fee. A manipulative that embeds a proprietary font cannot be legally redistributed; one that uses a non-open palette cannot be forked for new families. The project style guide calls for an open legible font and a colour-blind-safe palette, but neither has been formally selected and cleared.",
+  "objective": "Identify, evaluate, and formally select an open-licensed font and a colour-blind-safe colour palette for use across all manipulative families, confirming that both permit embedding in PDFs and redistribution.",
+  "acceptanceCriteria": [
+    "At least one font is selected that: is licensed under OFL (SIL Open Font License) or equivalent, is legible at small sizes on consumer printers, supports Latin numerals plus common fraction glyphs, and permits embedding in PDFs and redistribution of derivative PDFs.",
+    "At least one colour palette is selected that: is colour-blind-safe (passes Okabe-Ito or equivalent simulation), works in grayscale via luminance difference alone, and is under a public-domain or CC0/CC-BY license.",
+    "A clearance document is produced listing: chosen font(s) + version + license SPDX identifier + attribution text, chosen palette + source + license, and confirmation of PDF-embedding and redistribution permissions.",
+    "The clearance document is published CC-BY-4.0 and cross-referenced from the style guide."
+  ],
+  "resources": [
+    "SIL Open Font License (OFL) -- https://openfontlicense.org",
+    "Okabe-Ito colour-blind-safe palette reference",
+    "tasks/math-manip-style-001.json -- style guide requires an open legible font"
+  ],
+  "output": "A clearance document (docs/open-asset-license-clearance.md) listing the approved font(s) and palette with license metadata and attribution text, licensed CC-BY-4.0.",
+  "requestor": "jdev1977",
+  "verifiedNeed": true,
+  "outputLicense": "CC-BY-4.0"
+}

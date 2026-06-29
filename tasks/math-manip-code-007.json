@@ -1,0 +1,34 @@
+{
+  "id": "math-manip-code-007",
+  "title": "Generators: ten frames, hundred charts, place-value charts",
+  "project": "math-manipulatives-printables",
+  "type": "code",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["education", "mathematics", "open-content", "tooling"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "Ten frames (a 2x5 grid used for counting, addition, and subitising), hundred charts (a 10x10 grid of numbers 1-100 or 0-99), and place-value charts (columns for ones, tens, hundreds, thousands) are widely used across early and elementary mathematics. These three families share a common grid-based structure that the parametric engine can support with a generalised grid module. Relationship invariants are structural: grid cell counts and row/column alignment must be exact.",
+  "objective": "Implement generator modules for ten frames, hundred charts, and place-value charts, building on the parametric engine, with verified structural correctness and math-educator review.",
+  "acceptanceCriteria": [
+    "Ten-frame generator produces 2x5 and 5x2 orientations; blank and partially filled variants; configurable cell size.",
+    "Hundred-chart generator produces 1-100 and 0-99 starting variants; numbers correctly sequenced left-to-right, top-to-bottom; configurable cell size and font.",
+    "Place-value chart generator produces configurable column sets (ones/tens/hundreds; extending to millions); column labels are clear and legible in grayscale.",
+    "All three families pass the automated verification harness: cell counts, row/column alignment, and grid-line spacing within tolerance.",
+    "Math-educator review sign-off recorded for each family.",
+    "All standard variants generated (A4/Letter x colour/grayscale/ink-saver x standard/large-print).",
+    "MIT-licensed; all commits DCO-signed; passes pnpm build, pnpm test, and CI gate."
+  ],
+  "resources": [
+    "tasks/math-manip-code-001.json -- parametric generator engine",
+    "tasks/math-manip-code-002.json -- verification harness",
+    "tasks/math-manip-style-001.json -- style guide v1"
+  ],
+  "output": "Three generator modules (ten-frames, hundred-charts, place-value-charts) integrated into the engine package, with spec files and example output PDFs, in a pull request, MIT-licensed.",
+  "requestor": "jdev1977",
+  "verifiedNeed": true,
+  "outputLicense": "MIT"
+}

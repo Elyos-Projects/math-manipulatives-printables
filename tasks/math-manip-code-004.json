@@ -1,0 +1,33 @@
+{
+  "id": "math-manip-code-004",
+  "title": "Number-line generator (integer/fraction/decimal/blank; ranges + steps)",
+  "project": "math-manipulatives-printables",
+  "type": "code",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["education", "mathematics", "open-content", "tooling"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "Number lines are used across all years of elementary mathematics: counting, skip-counting, addition, subtraction, fractions, decimals, and negative numbers. The pedagogical requirement is exact interval equality -- an unequal interval implies a false numerical relationship. The generator must support configurable ranges and step sizes for integers, fractions, decimals, and blank (open) lines, and the harness must verify interval equality geometrically.",
+  "objective": "Implement a number-line generator module that produces integer, fraction, decimal, and blank number lines with configurable range and step, with geometrically verified equal intervals.",
+  "acceptanceCriteria": [
+    "Supports four line types: integer, fraction (with configurable denominator), decimal, and blank/open (no labels, just tick marks or no marks).",
+    "Range and step are configurable via the spec; origin and direction are always correct.",
+    "Intervals are provably equal: the verification harness confirms interval equality geometrically (not just by checking the spec value), and a math-educator review sign-off is recorded.",
+    "Labels are legible at standard and large-print sizes in grayscale.",
+    "Generates all standard variants: A4/Letter x colour/grayscale/ink-saver x standard/large-print.",
+    "MIT-licensed; all commits DCO-signed; passes pnpm build, pnpm test, and CI verification gate."
+  ],
+  "resources": [
+    "tasks/math-manip-code-001.json -- parametric generator engine",
+    "tasks/math-manip-code-002.json -- verification harness (must extend to check interval equality)",
+    "tasks/math-manip-style-001.json -- style guide v1"
+  ],
+  "output": "A number-line generator module integrated into the generator engine package, with spec files for integer/fraction/decimal/blank variants and example output PDFs, in a pull request, MIT-licensed.",
+  "requestor": "jdev1977",
+  "verifiedNeed": true,
+  "outputLicense": "MIT"
+}

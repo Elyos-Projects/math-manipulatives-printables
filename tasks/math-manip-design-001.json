@@ -1,0 +1,32 @@
+{
+  "id": "math-manip-design-001",
+  "title": "Reference design + dimensional spec: fraction tiles (halves-twelfths)",
+  "project": "math-manipulatives-printables",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["education", "mathematics", "open-content", "accessibility"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Fraction tiles are one of the four core manipulative families. Their defining pedagogical constraint is relational exactness: two one-half tiles must fit exactly on one whole tile, three one-third tiles must fit exactly on one whole, and so on. A dimensional error of even a few millimetres breaks the mathematical relationship the manipulative is meant to demonstrate. Before any PDF is generated, a reference design and dimensional spec must be produced and math-educator reviewed to guarantee correctness.",
+  "objective": "Author a reference design and machine-readable dimensional spec for the fraction-tile family covering halves through twelfths, conforming to style-guide v1, and have it reviewed by a math educator.",
+  "acceptanceCriteria": [
+    "Declares nominal physical dimensions (mm) for the whole and each denomination (halves through twelfths) such that they compose exactly within style-guide tolerance (the sum of two halves equals the whole within +/- 0.5 mm or +/- 0.5%, whichever is larger).",
+    "Specifies labelling that is unambiguous (e.g. '1/3') and uses non-colour-dependent distinctions between fraction families (shape, pattern, or label redundancy).",
+    "Specifies colour-mode variants (colour, grayscale, ink-saver) and large-print variant dimensions, all conforming to style-guide v1.",
+    "Includes the mandatory 100 mm calibration bar specification and conservative safe margins for A4 and US Letter.",
+    "Is reviewed by a qualified math educator for mathematical and pedagogical correctness; reviewer name and sign-off are recorded in the document."
+  ],
+  "resources": [
+    "tasks/math-manip-style-001.json -- style guide v1 (units, tolerance, paper sizes, colour modes, accessibility)",
+    "tasks/math-manip-spec-001.json -- manipulative-spec schema to conform to",
+    "tasks/math-manip-research-001.json -- open-asset license clearance (fonts + palettes)"
+  ],
+  "output": "A reference design document (design/fraction-tiles-reference-design.md) and a companion machine-readable spec file (specs/fraction-tiles.spec.json) conforming to the manipulative-spec schema, licensed CC-BY-4.0, with math-educator sign-off recorded.",
+  "requestor": "jdev1977",
+  "verifiedNeed": true,
+  "outputLicense": "CC-BY-4.0"
+}

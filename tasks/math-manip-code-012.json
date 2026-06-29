@@ -1,0 +1,30 @@
+{
+  "id": "math-manip-code-012",
+  "title": "Money manipulatives (currency-neutral templates)",
+  "project": "math-manipulatives-printables",
+  "type": "code",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["education", "mathematics", "open-content", "tooling"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Money manipulatives help learners understand place value, decimal notation, and real-world arithmetic. To be globally usable without implying reproduction of any specific legal-tender currency, this family uses currency-neutral templates: coins and notes labelled with abstract denominations (1, 5, 10, 25, 50, 100) and generic designs, not the imagery or text of any real currency. Teachers can assign these to their local currency verbally.",
+  "objective": "Implement a currency-neutral money-manipulative generator module producing coin and note templates labelled with abstract denominations, without any imagery or text implying real legal-tender currency.",
+  "acceptanceCriteria": [
+    "Generates coin and note templates with abstract denominations (1, 5, 10, 25, 50, 100 units) using generic geometric designs; no text, imagery, or design elements associated with any real currency or nation.",
+    "Coin sizes are scaled proportionally to denomination (larger denomination = larger coin) and stated in mm in the spec; sizes are within a range printable on A4/Letter.",
+    "All standard variants generated; legible in grayscale.",
+    "MIT-licensed; all commits DCO-signed; passes pnpm build, pnpm test, and CI gate."
+  ],
+  "resources": [
+    "tasks/math-manip-code-001.json -- parametric generator engine",
+    "tasks/math-manip-style-001.json -- style guide v1"
+  ],
+  "output": "A currency-neutral money-manipulative generator module in the engine package, with a spec file and example output PDFs, in a pull request, MIT-licensed.",
+  "requestor": "jdev1977",
+  "verifiedNeed": true,
+  "outputLicense": "MIT"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "math-manip-code-008",
+  "title": "Pattern blocks / geometric shapes (angle + edge accuracy)",
+  "project": "math-manipulatives-printables",
+  "type": "code",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["education", "mathematics", "open-content", "tooling"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "Pattern blocks (hexagon, trapezoid, rhombus, triangle, square, narrow rhombus) are used for geometry, fractions, and spatial reasoning. Their critical constraint is angle accuracy: the 60-degree equilateral triangle must have exact 60-degree angles; the hexagon must be a regular hexagon; edges shared by complementary shapes must be exactly equal length so the shapes tile correctly. An angle error of even a few degrees will prevent the shapes from tiling and teaches a false geometric relationship.",
+  "objective": "Implement a pattern-blocks / geometric-shapes generator module that produces geometrically exact shapes with verified angle and edge accuracy, reviewed by a math educator.",
+  "acceptanceCriteria": [
+    "Generates the six standard pattern-block shapes: regular hexagon, trapezoid (half hexagon), wide rhombus (two equilateral triangles), equilateral triangle, square, and narrow rhombus (30-60-90).",
+    "All angles are exactly correct to within the measurement precision of the verification harness; shared edge lengths are equal within tolerance, so shapes tile correctly.",
+    "The verification harness is extended to check angle accuracy (interior angles of each polygon) and shared-edge length equality.",
+    "Math-educator review sign-off for geometric and pedagogical correctness recorded.",
+    "All standard variants generated (A4/Letter x colour/grayscale/ink-saver x standard/large-print).",
+    "MIT-licensed; all commits DCO-signed; passes pnpm build, pnpm test, and CI gate."
+  ],
+  "resources": [
+    "tasks/math-manip-code-001.json -- parametric generator engine",
+    "tasks/math-manip-code-002.json -- verification harness (must extend to check angles)",
+    "tasks/math-manip-style-001.json -- style guide v1"
+  ],
+  "output": "A pattern-blocks generator module integrated into the engine package, with a spec file and example output PDFs showing correct tiling, in a pull request, MIT-licensed.",
+  "requestor": "jdev1977",
+  "verifiedNeed": true,
+  "outputLicense": "MIT"
+}

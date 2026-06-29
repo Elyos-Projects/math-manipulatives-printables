@@ -1,0 +1,33 @@
+{
+  "id": "math-manip-research-002",
+  "title": "Secure >=1 distribution channel (OER repo / teacher network / NGO)",
+  "project": "math-manipulatives-printables",
+  "type": "research",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["education", "mathematics", "open-content", "research"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "The project's definition of 'shipped' requires that a real learner can obtain and print the manipulatives -- distribution is not optional. No partner organisation, OER repository, school, or NGO has yet agreed to host these printables and surface them to learners. Until at least one channel is confirmed, every delivery-dependent task carries verifiedNeed=false and the project cannot claim any manipulative has been delivered. This task is the M0 exit-criterion gating distribution.",
+  "objective": "Identify, evaluate, and confirm at least one concrete distribution channel that will host and surface the verified printables to under-resourced learners, and document the channel's terms.",
+  "acceptanceCriteria": [
+    "Evaluates candidate channels in priority order: established OER repositories (e.g. OER Commons, Khan Academy, CK-12, Teachers Pay Teachers free tier), teacher and homeschool networks, NGO education programmes, with fallback to project-owned GitHub releases.",
+    "Identifies at least one channel that will actively host and surface the printables to learners (a GitHub release page alone does not satisfy this criterion).",
+    "Records the confirmed channel's required output license, attribution format, submission/upload process, and any content restrictions.",
+    "States the time-box for the search effort and the kill/pivot criteria if no channel is found.",
+    "On success, updates verifiedNeed to true for delivery-dependent tasks targeting that channel and records the confirmation in a signed-off document."
+  ],
+  "resources": [
+    "PLAN.md (this repo) -- partner gap section and M0 exit criteria",
+    "OER Commons -- https://www.oercommons.org",
+    "Khan Academy -- https://www.khanacademy.org",
+    "Open Educational Resources (OER) repositories survey"
+  ],
+  "output": "A channel-clearance document (docs/distribution-channel.md) naming the confirmed channel(s), their license/attribution requirements, submission process, and time-box/pivot criteria, licensed CC-BY-4.0.",
+  "requestor": "jdev1977",
+  "verifiedNeed": true,
+  "outputLicense": "CC-BY-4.0"
+}

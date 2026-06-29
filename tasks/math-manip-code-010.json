@@ -1,0 +1,32 @@
+{
+  "id": "math-manip-code-010",
+  "title": "Algebra tiles / integer chips extension",
+  "project": "math-manipulatives-printables",
+  "type": "code",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["education", "mathematics", "open-content", "tooling"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Algebra tiles (positive/negative units, x-tiles, x-squared tiles) and integer chips (two-colour counters used for signed arithmetic) extend the manipulative set into middle-school algebra. Their key relationship invariants are that a positive tile and its negative counterpart exactly cancel (zero pair), and that x-tiles are dimensionally consistent with x-squared tiles (the x-tile width matches the x-squared tile side). These invariants must be machine-verified.",
+  "objective": "Implement generator modules for algebra tiles and integer chips as an extension to the parametric engine, with machine-verified zero-pair and dimensional-consistency invariants.",
+  "acceptanceCriteria": [
+    "Generates positive and negative unit tiles, x-tiles, and x-squared tiles with clear positive/negative visual distinction not relying on colour alone.",
+    "Zero-pair invariant verified: positive and negative versions of each tile type are exactly equal in dimensions (and thus would cancel physically when overlaid).",
+    "x-tile / x-squared dimensional consistency verified: the x-tile width equals the x-squared tile side within tolerance.",
+    "Integer chips variant generates two-colour counters (positive/negative) with non-colour distinction (e.g. + and - labels or different patterns).",
+    "All standard variants generated; math-educator review sign-off recorded.",
+    "MIT-licensed; all commits DCO-signed; passes pnpm build, pnpm test, and CI gate."
+  ],
+  "resources": [
+    "tasks/math-manip-code-001.json -- parametric generator engine",
+    "tasks/math-manip-code-002.json -- verification harness (extend for zero-pair and x-consistency checks)"
+  ],
+  "output": "Algebra-tiles and integer-chips generator modules in the engine package, with spec files and example output PDFs, in a pull request, MIT-licensed.",
+  "requestor": "jdev1977",
+  "verifiedNeed": true,
+  "outputLicense": "MIT"
+}

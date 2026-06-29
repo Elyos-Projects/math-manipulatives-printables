@@ -1,0 +1,33 @@
+{
+  "id": "math-manip-research-003",
+  "title": "Accessibility audit (contrast ratios + colour-blind simulation) across the set",
+  "project": "math-manipulatives-printables",
+  "type": "research",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["education", "mathematics", "open-content", "accessibility"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "The automated verification harness checks contrast ratios and basic colour-blind safety, but a manual accessibility audit provides a deeper review: testing with actual colour-blind simulation tools, checking that the large-print variant is adequate for low-vision use in practice, and identifying any edge cases the automated checks missed. The audit findings feed directly back into the style guide and design system as concrete change requests.",
+  "objective": "Conduct a comprehensive accessibility audit of the full core set (all four families, all variants) covering contrast ratios, colour-blind simulation, and large-print adequacy, producing actionable findings.",
+  "acceptanceCriteria": [
+    "Confirms text/numeral contrast meets WCAG AA (>= 4.5:1) for all colour and grayscale variants across all four families.",
+    "Colour-blind simulation (protanopia, deuteranopia, tritanopia) confirms no information is lost without colour for any family in any variant.",
+    "Large-print variant is evaluated for adequacy for low-vision use by a qualified accessibility reviewer; gaps are logged as specific, actionable tasks.",
+    "Ink-saver outline variant is evaluated: patterns/hatching are distinguishable in black-and-white print.",
+    "Audit report lists all findings with pass/fail status and any required follow-up tasks, published CC-BY-4.0."
+  ],
+  "resources": [
+    "tasks/math-manip-data-002.json -- full core set to audit",
+    "tasks/math-manip-code-006.json -- large-print and high-contrast variants",
+    "tasks/math-manip-design-002.json -- colour-blind-safe design system",
+    "WCAG 2.x contrast guidelines"
+  ],
+  "output": "An accessibility audit report (docs/accessibility-audit.md) with per-family, per-variant findings and a list of any follow-up tasks, CC-BY-4.0.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

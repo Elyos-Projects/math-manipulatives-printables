@@ -1,0 +1,33 @@
+{
+  "id": "math-manip-code-009",
+  "title": "Internationalised numerals (>=1 additional numeral system)",
+  "project": "math-manipulatives-printables",
+  "type": "code",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["education", "mathematics", "open-content", "i18n"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "translation",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "For learners whose home numeral system is not Western Arabic (0-9), manipulatives labelled only in Western Arabic numerals present an additional cognitive load or may be inaccessible entirely. Eastern Arabic numerals (used across Arabic-speaking countries) and Devanagari numerals (used in Hindi-medium instruction) are among the most widely used alternatives. Adding support for at least one additional numeral system to the generator engine allows the same pedagogically verified manipulative to serve a broader population.",
+  "objective": "Add internationalised numeral rendering support to the generator engine for at least one additional numeral system, with a math-educator and native-script reviewer sign-off.",
+  "acceptanceCriteria": [
+    "The generator engine supports at least one additional numeral system (e.g. Eastern Arabic or Devanagari) via a locale/numeral-system parameter in the spec.",
+    "All numeral glyphs in the output use only open-licensed fonts covering the target script; font license and attribution recorded.",
+    "Output PDFs pass the automated verification harness (dimensional correctness unchanged); numeral legibility at standard and large-print sizes confirmed by a native-script reviewer.",
+    "A math educator confirms the numeral representations are mathematically correct and appropriate for the target educational context.",
+    "The implementation is extensible: adding a second numeral system requires only a new font + glyph mapping, not architectural changes.",
+    "MIT-licensed; all commits DCO-signed; passes pnpm build, pnpm test, and CI gate."
+  ],
+  "resources": [
+    "tasks/math-manip-code-001.json -- generator engine (numeral rendering to extend)",
+    "tasks/math-manip-research-001.json -- open-asset license clearance (must extend for new script fonts)",
+    "Unicode numeral system references for Eastern Arabic (U+0660-U+0669) and Devanagari (U+0966-U+096F)"
+  ],
+  "output": "Internationalised numeral support integrated into the generator engine, with at least one locale-specific spec example and output PDFs, in a pull request, MIT-licensed.",
+  "requestor": "jdev1977",
+  "verifiedNeed": true,
+  "outputLicense": "MIT"
+}

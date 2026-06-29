@@ -1,0 +1,33 @@
+{
+  "id": "math-manip-code-002",
+  "title": "Automated dimensional + relationship verification harness (CI gate)",
+  "project": "math-manipulatives-printables",
+  "type": "code",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["education", "mathematics", "open-content", "tooling"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "Dimensional correctness is the project's core promise: a fraction tile that is 2 mm too narrow, or a number line with unequal intervals, teaches a false mathematical relationship. Checking 'it looks right on screen' is insufficient. The verification harness parses the generated SVG/PDF geometry, asserts every declared dimension against the spec within tolerance, and asserts relational invariants (e.g. 10 unit blocks == 1 rod, two halves == one whole). It must run in CI and block any out-of-tolerance artifact from being released.",
+  "objective": "Build an automated verification harness that parses generated SVG/PDF geometry, asserts all declared dimensions and relationship invariants within tolerance, checks accessibility properties, and runs as a CI gate that blocks out-of-tolerance releases.",
+  "acceptanceCriteria": [
+    "Parses generated SVG (or PDF) geometry and asserts every declared dimension (width, height, pitch, etc.) from the spec within the style-guide tolerance (+/- 0.5 mm or +/- 0.5%, whichever is larger).",
+    "Asserts declared relationship invariants: e.g. sum of N denomination-tiles == one whole tile; equal number-line intervals; 10 unit blocks == 1 rod; verifiable from geometry alone.",
+    "Runs in CI (GitHub Actions) and blocks any out-of-tolerance artifact with a non-zero exit code; emits an auditable JSON report (no secrets or PII).",
+    "Includes accessibility sub-checks: contrast ratio >= WCAG AA for all text/numerals; detects colour-only encodings; verifies embedded font is on the cleared open-asset list.",
+    "Has a test suite with at least one known-good spec (passes) and one known-bad spec (fails); tests pass in pnpm test.",
+    "MIT-licensed; all commits DCO-signed."
+  ],
+  "resources": [
+    "tasks/math-manip-spec-001.json -- spec schema (declares dimensions and invariants to verify)",
+    "tasks/math-manip-style-001.json -- style guide v1 (tolerance definition)",
+    "tasks/math-manip-code-001.json -- generator engine (produces the artifacts to verify)"
+  ],
+  "output": "A TypeScript verification package (packages/verifier or similar) in a pull request, MIT-licensed, with a CI workflow file (.github/workflows/verify.yml), a CLI entry point, and test fixtures.",
+  "requestor": "jdev1977",
+  "verifiedNeed": true,
+  "outputLicense": "MIT"
+}

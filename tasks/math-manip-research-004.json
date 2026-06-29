@@ -1,0 +1,32 @@
+{
+  "id": "math-manip-research-004",
+  "title": "Beneficiary validation: educator/family uses printed sets",
+  "project": "math-manipulatives-printables",
+  "type": "research",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["education", "mathematics", "open-content", "research"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "The project's success metric is that learners actually receive and use the printables, not merely that they are downloadable. Beneficiary validation closes the loop: at least one educator or family per manipulative family prints and uses a set in a real learning context, confirms it is dimensionally correct and practically usable, and provides feedback on legibility, cutting difficulty, mislabels, or print issues. Findings feed directly back into specs and the style guide.",
+  "objective": "Recruit at least one educator or family per manipulative family to print and use the core set in a real learning context, collect structured feedback, and fold actionable findings back into the project.",
+  "acceptanceCriteria": [
+    "At least one educator or family per manipulative family (four total) prints and uses a set and confirms it is dimensionally correct and usable in practice.",
+    "Structured feedback is collected covering: legibility of numerals at standard and large-print sizes, ease of cutting, any mislabels or dimensional surprises, and overall suitability for the intended learner age range.",
+    "All feedback is anonymised before publication (no PII recorded or published).",
+    "Actionable findings (e.g. 'cut lines too faint on grayscale', '1/8 label too small') are documented as concrete change requests and linked to follow-up tasks.",
+    "Summary report published CC-BY-4.0."
+  ],
+  "resources": [
+    "tasks/math-manip-data-002.json -- full core set distributed for validation",
+    "tasks/math-manip-research-002.json -- distribution channel (source of validator recruits)",
+    "PLAN.md (this repo) -- success metrics and beneficiary description"
+  ],
+  "output": "An anonymised beneficiary-validation report (docs/beneficiary-validation.md) with per-family feedback summaries and a list of actionable follow-up tasks, CC-BY-4.0.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}
