@@ -1,0 +1,32 @@
+{
+  "id": "math-manip-style-001",
+  "title": "Author print & accessibility style guide v1",
+  "project": "math-manipulatives-printables",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["education", "mathematics", "open-content", "accessibility"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Printable math manipulatives (counters, number lines, fraction tiles, base-ten blocks) are only useful if they print at the correct physical size on ordinary printers and are accessible to all learners. A dimensionally wrong fraction tile or an unequal number line teaches a false mathematical relationship. Before any manipulative is designed or generated, the project needs one versioned style guide so that every printable from many parallel AI sessions is exact, printable on consumer printers in both A4 and US Letter, usable in grayscale, and accessible by default.",
+  "objective": "Write and publish version 1 of the print & accessibility style guide that all design and generation tasks will follow.",
+  "acceptanceCriteria": [
+    "Defines the canonical unit (mm) and the verification tolerance (+/- 0.5 mm or +/- 0.5%, whichever is larger), and requires verifying relationships (e.g. two halves compose to one whole), not only individual element sizes.",
+    "Specifies support for both A4 and US Letter, conservative no-full-bleed safe margins, and a mandatory embedded 100 mm calibration bar on every sheet.",
+    "Defines colour modes (colour / grayscale / ink-saver outline) and forbids colour-only encoding (shape, label, or pattern redundancy is required).",
+    "Defines accessibility rules: text/numeral contrast at least WCAG AA, large-print and high-contrast variants, an open legible font, and scissor-followable cut guides.",
+    "Is published, versioned, and licensed CC-BY-4.0."
+  ],
+  "resources": [
+    "C:\\code\\elyos\\planning\\projects\\math-manipulatives-printables\\PLAN.md",
+    "WCAG 2.x contrast and non-text-content guidance",
+    "SIL Open Font License; Okabe-Ito colour-blind-safe palette"
+  ],
+  "output": "A versioned style-guide document (style-guide/print-accessibility-style-guide.md), CC-BY-4.0, covering units and tolerance, paper sizes and safe margins, the calibration bar, colour modes, accessibility rules, fonts, and cut guides.",
+  "requestor": "jdev1977",
+  "verifiedNeed": true,
+  "outputLicense": "CC-BY-4.0"
+}
