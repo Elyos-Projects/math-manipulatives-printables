@@ -1,0 +1,31 @@
+{
+  "id": "math-manip-code-011",
+  "title": "Clock faces / time manipulatives",
+  "project": "math-manipulatives-printables",
+  "type": "code",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["education", "mathematics", "open-content", "tooling"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Telling time is a core elementary mathematics topic, and printable clock faces are among the most searched-for free teacher resources. The critical constraint for clock faces is angle accuracy: the 12 hour positions must be at exact 30-degree intervals, and the 60 minute positions at exact 6-degree intervals. A clock face with unequal intervals teaches a false relationship between angle and time. This family is relatively self-contained and a natural addition to the backlog.",
+  "objective": "Implement a clock-face / time-manipulative generator module with verified angle accuracy for hour and minute positions.",
+  "acceptanceCriteria": [
+    "Generates analog clock faces with 12 hour markers at exactly 30-degree intervals and 60 minute markers at exactly 6-degree intervals; angle accuracy verified by the harness.",
+    "Supports blank (no hands), preset-time, and cut-out-hands variants; movable-hand variant provides separate hand pieces to cut and attach with a brass fastener.",
+    "Hour and minute numerals are legible at standard and large-print sizes in grayscale.",
+    "All standard variants generated (A4/Letter x colour/grayscale x standard/large-print).",
+    "MIT-licensed; all commits DCO-signed; passes pnpm build, pnpm test, and CI gate."
+  ],
+  "resources": [
+    "tasks/math-manip-code-001.json -- parametric generator engine",
+    "tasks/math-manip-code-002.json -- verification harness (extend for angle accuracy check)"
+  ],
+  "output": "A clock-face generator module in the engine package, with a spec file and example output PDFs, in a pull request, MIT-licensed.",
+  "requestor": "jdev1977",
+  "verifiedNeed": true,
+  "outputLicense": "MIT"
+}

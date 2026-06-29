@@ -1,0 +1,34 @@
+{
+  "id": "math-manip-code-001",
+  "title": "Build parametric generator engine (spec to SVG to print-ready PDF)",
+  "project": "math-manipulatives-printables",
+  "type": "code",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["education", "mathematics", "open-content", "tooling"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "The cold-start fraction-tile set (M0) proves one manipulative family can be built manually. M1 replaces hand-crafted generation with a parametric engine: read a manipulative-spec JSON, emit an SVG with physical dimensions locked in mm, convert to a print-ready PDF. The engine must be deterministic and reproducible (same spec + same generator version == same byte-equivalent output across machines) and must not require a headless browser in the core path, so it can run in CI without special environment setup.",
+  "objective": "Build a TypeScript parametric generator engine that reads a manipulative-spec JSON and produces print-ready PDFs for all paper sizes and colour modes specified in the spec, with the calibration bar embedded automatically.",
+  "acceptanceCriteria": [
+    "Reads a manipulative-spec JSON (per math-manip-spec-001 schema) and emits one PDF per (paper-size x colour-mode) combination declared in the spec.",
+    "Physical dimensions are locked in mm at the SVG/PDF coordinate level; no runtime scaling is applied.",
+    "Embeds a 100 mm calibration bar on every output sheet automatically.",
+    "Applies conservative no-full-bleed safe margins automatically for A4 and US Letter.",
+    "One spec fans out to A4/Letter x colour/grayscale/ink-saver x standard/large-print variants.",
+    "Deterministic and reproducible: same spec + same generator version produces identical output across machines without a headless browser in the core path.",
+    "MIT-licensed; all commits DCO-signed; passes pnpm build and pnpm test."
+  ],
+  "resources": [
+    "tasks/math-manip-spec-001.json -- manipulative-spec schema",
+    "tasks/math-manip-style-001.json -- style guide v1 (dimensions, tolerance, calibration bar, margins)",
+    "tasks/math-manip-design-001.json -- fraction-tile spec as first target"
+  ],
+  "output": "A TypeScript generator package (packages/generator or similar) in a pull request, MIT-licensed, with unit tests, a CLI entry point (generate <spec.json> --outdir <dir>), and a worked example for the fraction-tile spec.",
+  "requestor": "jdev1977",
+  "verifiedNeed": true,
+  "outputLicense": "MIT"
+}

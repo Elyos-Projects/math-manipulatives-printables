@@ -1,0 +1,32 @@
+{
+  "id": "math-manip-research-005",
+  "title": "Cross-printer print-fidelity testing (more printer models)",
+  "project": "math-manipulatives-printables",
+  "type": "research",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["education", "mathematics", "open-content", "research"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Initial physical print tests use whatever printers the contributor has available. To build confidence that the manipulatives print correctly on the wide variety of consumer and office printers in real classrooms -- including older inkjets, low-end laser printers, and school multifunction devices -- a broader cross-printer test is needed. The calibration bar provides the check: if it measures 100 mm +/- tolerance, the sheet is correct. Systematic testing across more models strengthens the claim that the printables work on ordinary printers.",
+  "objective": "Conduct physical print-fidelity tests on at least 5 additional printer models (beyond those used in M0/M1), documenting results and any printer-specific workarounds.",
+  "acceptanceCriteria": [
+    "At least 5 additional printer models tested (at least 2 inkjet and 2 laser/LED), covering a range of age, manufacturer, and price point.",
+    "For each printer: calibration bar measured; all four core families printed and measured against declared dimensions; pass/fail recorded.",
+    "Any printer-specific workaround (e.g. a specific print dialog setting needed) is documented in the print-and-use instructions.",
+    "Results published in a standardised format (printer make/model/year, OS used, calibration bar measurement, pass/fail per family) in the cross-printer test report.",
+    "Report published CC-BY-4.0."
+  ],
+  "resources": [
+    "tasks/math-manip-data-002.json -- full core set to test",
+    "tasks/math-manip-writing-001.json -- print-and-use instructions (to update with workarounds)",
+    "tasks/math-manip-style-001.json -- style guide v1 (tolerance definition and calibration bar spec)"
+  ],
+  "output": "A cross-printer test report (docs/cross-printer-test-report.md) with per-printer results and an updated print-and-use instructions document if workarounds are found, CC-BY-4.0.",
+  "requestor": "jdev1977",
+  "verifiedNeed": true,
+  "outputLicense": "CC-BY-4.0"
+}

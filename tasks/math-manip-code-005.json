@@ -1,0 +1,33 @@
+{
+  "id": "math-manip-code-005",
+  "title": "Base-ten blocks generator (unit/rod/flat + thousand-cube net)",
+  "project": "math-manipulatives-printables",
+  "type": "code",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["education", "mathematics", "open-content", "tooling"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "Base-ten blocks (units, rods of 10, flats of 100, and thousand cubes) are the canonical manipulative for place-value understanding. Their relational invariant is strict: 10 units must exactly equal 1 rod in every dimension; 10 rods must exactly equal 1 flat; 10 flats must exactly equal the thousand-cube net face. A printable base-ten block set that violates these relationships teaches a false understanding of place value. The thousand cube is printed as a net (6-face unfold) that can be cut and folded.",
+  "objective": "Implement a base-ten blocks generator module that produces units, rods, flats, and a thousand-cube net with geometrically exact 10:1 relationships, verified by the harness.",
+  "acceptanceCriteria": [
+    "Generates unit squares, rod (strip of 10 units), flat (10x10 grid of units), and thousand-cube net (6-face unfold).",
+    "Relationship invariants pass verification: 10 units == 1 rod; 10 rods == 1 flat; flat dimensions match the thousand-cube net face, all within style-guide tolerance.",
+    "Includes grid lines on rods and flats to show individual units, legible in grayscale.",
+    "Thousand-cube net includes fold/cut guide lines and is labelled '1000'.",
+    "Generates all standard variants: A4/Letter x colour/grayscale/ink-saver x standard/large-print.",
+    "MIT-licensed; all commits DCO-signed; passes pnpm build, pnpm test, and CI verification gate."
+  ],
+  "resources": [
+    "tasks/math-manip-code-001.json -- parametric generator engine",
+    "tasks/math-manip-code-002.json -- verification harness (must extend to check 10:1 relationships)",
+    "tasks/math-manip-style-001.json -- style guide v1"
+  ],
+  "output": "A base-ten blocks generator module integrated into the generator engine package, with a spec file (specs/base-ten-blocks.spec.json) and example output PDFs, in a pull request, MIT-licensed.",
+  "requestor": "jdev1977",
+  "verifiedNeed": true,
+  "outputLicense": "MIT"
+}

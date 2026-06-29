@@ -1,0 +1,30 @@
+{
+  "id": "math-manip-spec-001",
+  "title": "Define manipulative-spec schema + provenance/verification record",
+  "project": "math-manipulatives-printables",
+  "type": "data",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["education", "mathematics", "open-content", "tooling"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "dataset",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Every parametric manipulative in this project is generated from a versioned spec that encodes all dimensional, labelling, and print requirements. Without a machine-readable schema for those specs, parallel contributors will produce incompatible artifacts and the verification harness has no contract to check against. A provenance and verification record format is equally critical: it must capture who generated the file, which spec version was used, which tolerance checks passed, and whether a physical print test was performed.",
+  "objective": "Author and publish a machine-readable JSON/TypeScript schema for the manipulative-spec format and a companion provenance/verification-record schema, so that every generated artifact is traceable and verifiable.",
+  "acceptanceCriteria": [
+    "Schema captures all required fields: manipulative family, nominal dimensions in mm, tolerance, paper size(s), colour mode(s), font reference, calibration bar specification, and relationship invariants (e.g. two halves == one whole).",
+    "Provenance/verification record schema captures: spec id + version, generator version, generation timestamp, dimensional-check result, relationship-check result, and physical-print-test record (date, printer model, measured dimensions, pass/fail).",
+    "Schemas are published with at least one valid example instance each.",
+    "Schemas are licensed CC-BY-4.0 and versioned (v1.0.0 or semver pre-release)."
+  ],
+  "resources": [
+    "PLAN.md (this repo) -- dimensional and tolerance requirements",
+    "tasks/math-manip-style-001.json -- style guide task for unit and tolerance definitions"
+  ],
+  "output": "A versioned schema file (schema/manipulative-spec.schema.json) and a provenance record schema (schema/provenance-record.schema.json), each with an example instance, licensed CC-BY-4.0.",
+  "requestor": "jdev1977",
+  "verifiedNeed": true,
+  "outputLicense": "CC-BY-4.0"
+}

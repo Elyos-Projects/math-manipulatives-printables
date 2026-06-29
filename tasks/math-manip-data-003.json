@@ -1,0 +1,32 @@
+{
+  "id": "math-manip-data-003",
+  "title": "Expand denominations/ranges; publish expanded verified set",
+  "project": "math-manipulatives-printables",
+  "type": "data",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["education", "mathematics", "open-content", "accessibility"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "The initial core set covers the most commonly needed configurations (halves through twelfths for fractions; integer and basic fraction number lines; standard unit/rod/flat blocks). After the core set is distributed and beneficiary validation is complete, learner and educator feedback typically identifies gaps: additional fraction denominators (thirteenths through twentieths), number-line ranges beyond 0-20, or mixed-unit number lines. This task expands the verified set based on actual feedback.",
+  "objective": "Expand the verified core set with additional denominations and ranges identified from beneficiary validation feedback, generate and verify all new variants, and publish through the confirmed channel.",
+  "acceptanceCriteria": [
+    "At least one new configuration per family is added based on findings from math-manip-research-004 (beneficiary validation); expansion choices are documented with the feedback that motivated them.",
+    "All new PDFs pass the automated dimensional and relationship verification harness.",
+    "Physical print tests are completed for representative new variants (at least one new variant per family).",
+    "Expanded set is distributed through the confirmed channel with updated listing; attribution and license records updated.",
+    "Zero license violations in any new content."
+  ],
+  "resources": [
+    "tasks/math-manip-research-004.json -- beneficiary validation findings driving expansion choices",
+    "tasks/math-manip-code-004.json -- number-line generator (configurable ranges)",
+    "tasks/math-manip-code-005.json -- base-ten blocks generator"
+  ],
+  "output": "Expanded PDF output set in output/expanded-set/, with verification reports and physical print-test records, in a pull request, CC-BY-4.0.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

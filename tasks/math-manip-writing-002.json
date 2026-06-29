@@ -1,0 +1,32 @@
+{
+  "id": "math-manip-writing-002",
+  "title": "Curriculum-standards mapping for the four families",
+  "project": "math-manipulatives-printables",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["education", "mathematics", "open-content"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Teachers and curriculum coordinators want to know which learning standards a manipulative supports before adopting it. A curriculum-standards mapping document helps educators identify which of the four core families (fractions, counters, number lines, base-ten blocks) align with standards they teach. The mapping must be descriptive and non-prescriptive -- it identifies alignment, not mandates, and must remain accessible to educators worldwide by mapping to at least one widely used international or US framework without endorsing any particular curriculum approach.",
+  "objective": "Research and write a descriptive curriculum-standards mapping document for all four core manipulative families, mapping each to at least one common standards framework, reviewed by a math educator.",
+  "acceptanceCriteria": [
+    "Each of the four manipulative families is mapped to at least one widely used standards framework (e.g. US Common Core State Standards for Mathematics, or an equivalent international framework).",
+    "Mapping is descriptive and non-prescriptive: it identifies which standards each manipulative supports, not which curriculum to follow.",
+    "Sources are cited; framework citations include version/year.",
+    "Reviewed and approved by a qualified math educator; reviewer recorded.",
+    "Published CC-BY-4.0; written to be accessible to educators internationally (avoids US-only framing where possible)."
+  ],
+  "resources": [
+    "tasks/math-manip-data-002.json -- the four core families this document maps",
+    "Common Core State Standards for Mathematics (CCSS-M)",
+    "NCTM Principles and Standards for School Mathematics"
+  ],
+  "output": "A curriculum-standards mapping document (docs/curriculum-standards-mapping.md), CC-BY-4.0, with per-family standards alignment and math-educator sign-off.",
+  "requestor": "jdev1977",
+  "verifiedNeed": true,
+  "outputLicense": "CC-BY-4.0"
+}

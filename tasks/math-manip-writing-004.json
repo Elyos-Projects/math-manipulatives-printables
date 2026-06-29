@@ -1,0 +1,32 @@
+{
+  "id": "math-manip-writing-004",
+  "title": "Instructional-text translation (multilingual)",
+  "project": "math-manipulatives-printables",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["education", "mathematics", "open-content", "i18n"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "translation",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "The print-and-use instructions, quick-start guides, and style guide are currently written in English. For the manipulatives to be maximally useful in non-English-speaking classrooms and homes -- which include a large fraction of the under-resourced settings this project targets -- at least the print instructions and one quick-start guide should be translated. Translation is prioritised if the first confirmed distribution channel serves a non-English-speaking community.",
+  "objective": "Translate the print-and-use instructions and at least one quick-start guide into at least one language other than English, with native-speaker review.",
+  "acceptanceCriteria": [
+    "At least one target language is selected based on the confirmed distribution channel's community (not arbitrarily chosen).",
+    "The print-and-use instructions document (math-manip-writing-001 output) is fully translated into the target language.",
+    "At least one quick-start guide (math-manip-writing-003 output) is translated into the target language.",
+    "Translations are reviewed by a native speaker with at least secondary-education-level mathematical literacy; reviewer recorded.",
+    "Translated documents are published CC-BY-4.0 with the same attribution as the English originals."
+  ],
+  "resources": [
+    "tasks/math-manip-writing-001.json -- print-and-use instructions (source text)",
+    "tasks/math-manip-writing-003.json -- quick-start guides (source text)",
+    "tasks/math-manip-research-002.json -- distribution channel (determines target language)"
+  ],
+  "output": "Translated versions of the print-and-use instructions and at least one quick-start guide (e.g. docs/translations/es/print-and-use-instructions.md), CC-BY-4.0, with native-speaker reviewer sign-off.",
+  "requestor": "jdev1977",
+  "verifiedNeed": true,
+  "outputLicense": "CC-BY-4.0"
+}

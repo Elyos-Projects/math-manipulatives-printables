@@ -1,0 +1,32 @@
+{
+  "id": "math-manip-data-001",
+  "title": "Generate + dimensionally verify cold-start fraction-tile set (A4+Letter, colour+grayscale)",
+  "project": "math-manipulatives-printables",
+  "type": "data",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["education", "mathematics", "open-content", "accessibility"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "dataset",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "The cold-start fraction-tile set is M0's primary deliverable: a print-ready PDF set produced from the reference design spec before the parametric generator exists. This set proves the end-to-end pipeline works -- spec to PDF to verified printable -- and forms the baseline for the fully automated M1 generator. It must pass both automated dimensional checks and a physical print-and-measure test on a real printer before it can be distributed.",
+  "objective": "Generate the cold-start fraction-tile PDF set (A4 + US Letter, colour + grayscale) from the reference design spec, pass automated dimensional and relationship verification, and pass a physical print-and-measure test.",
+  "acceptanceCriteria": [
+    "Generates four PDF files: fraction-tiles-a4-colour.pdf, fraction-tiles-a4-grayscale.pdf, fraction-tiles-letter-colour.pdf, fraction-tiles-letter-grayscale.pdf.",
+    "Automated dimensional verification passes: all declared dimensions and relationships (e.g. two halves == one whole) are within style-guide tolerance; output report attached.",
+    "Physical print test passes: printed at 100% scale on a real A4 and a real US-Letter printer, measured against the embedded 100 mm calibration bar with a ruler; all measured dimensions within tolerance; test record (date, printer model, measurements) attached.",
+    "Accessibility checks pass: text/numeral contrast meets WCAG AA; no information encoded by colour alone; embedded font is from the cleared open-asset list.",
+    "Only open-licensed fonts and palettes from the cleared asset list are used; license and attribution recorded."
+  ],
+  "resources": [
+    "tasks/math-manip-design-001.json -- fraction-tile reference design and dimensional spec",
+    "tasks/math-manip-research-001.json -- cleared open-asset fonts and palettes",
+    "tasks/math-manip-style-001.json -- style guide v1"
+  ],
+  "output": "Four print-ready PDF files in output/fraction-tiles/ (A4+Letter x colour+grayscale), an automated verification report, and a physical print-test record, all licensed CC-BY-4.0.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

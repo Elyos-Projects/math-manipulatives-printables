@@ -1,0 +1,33 @@
+{
+  "id": "math-manip-maint-001",
+  "title": "Outcome dashboard + generator/font/toolchain maintenance",
+  "project": "math-manipulatives-printables",
+  "type": "maintenance",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["education", "mathematics", "open-content", "tooling"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Once the core set is live and generating outcomes, the project needs two ongoing systems: an outcome dashboard that makes the project's impact visible (download/use counts from the confirmed channel, beneficiary validation results, physical print-test records), and a documented maintenance rotation for updating fonts, generator dependencies, and the toolchain when upstream packages change. Without these, the project silently decays.",
+  "objective": "Build a lightweight outcome dashboard and establish a documented generator/font/toolchain maintenance process, including a maintainer and reviewer rotation.",
+  "acceptanceCriteria": [
+    "Outcome dashboard is live (a simple page or auto-updated markdown file in the repo) showing: download/use counts from the confirmed channel, beneficiary validation summary, and physical print-test status by family.",
+    "Dashboard data is updated at least monthly via a documented process (manual or automated).",
+    "Generator, font, and toolchain dependency maintenance process is documented: how to update fonts when a new OFL version is released, how to update npm dependencies, and how to re-run the verification harness after updates.",
+    "A maintainer and reviewer rotation is documented (at least one named maintainer and at least one named math-educator reviewer).",
+    "No secrets, API keys, or PII in the dashboard or maintenance scripts.",
+    "MIT-licensed for code; CC-BY-4.0 for the dashboard content."
+  ],
+  "resources": [
+    "tasks/math-manip-data-002.json -- core set whose outcomes to track",
+    "tasks/math-manip-research-002.json -- confirmed channel (source of usage metrics)",
+    "PLAN.md (this repo) -- success metrics definition"
+  ],
+  "output": "An outcome dashboard (docs/outcome-dashboard.md or a GitHub Pages page) and a maintenance guide (docs/maintenance.md), with a documented reviewer rotation, in a pull request.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

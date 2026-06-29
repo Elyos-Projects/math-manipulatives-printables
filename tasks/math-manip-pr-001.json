@@ -1,0 +1,32 @@
+{
+  "id": "math-manip-pr-001",
+  "title": "Distribute cold-start set via secured channel + establish baseline tracking",
+  "project": "math-manipulatives-printables",
+  "type": "maintenance",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["education", "mathematics", "open-content"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "M0 is complete only when a real learner can obtain and use the cold-start fraction-tile set. Having verified PDFs in the repository is a necessary but not sufficient condition for delivery -- the set must be actively surfaced through a confirmed distribution channel with instructions attached, and a baseline outcome-tracking mechanism must be in place so the project can measure whether learners are actually reaching the printables.",
+  "objective": "Upload and publish the verified cold-start fraction-tile set through the confirmed distribution channel, attach the print-and-use instructions, and establish baseline outcome tracking.",
+  "acceptanceCriteria": [
+    "The fraction-tile set (all four PDFs) and print-and-use instructions are published through the channel confirmed by math-manip-research-002, with correct attribution and the channel's required license.",
+    "The listing/entry on the distribution channel is discoverable (searchable by relevant terms: 'fraction tiles', 'math manipulatives', 'printable').",
+    "A baseline tracking record is created noting the publication date, channel, URL, and the initial download/view count (or equivalent channel metric) at time of publication.",
+    "The project README and PLAN.md are updated with the distribution URL and the M0 completion date.",
+    "No license violations: only CC-BY-4.0-compatible content is published; attribution to all contributors and tools recorded."
+  ],
+  "resources": [
+    "tasks/math-manip-research-002.json -- confirmed distribution channel and submission requirements",
+    "tasks/math-manip-data-001.json -- verified cold-start fraction-tile PDFs",
+    "tasks/math-manip-writing-001.json -- print-and-use instructions"
+  ],
+  "output": "Published printable set on the confirmed channel (URL recorded); updated README and PLAN.md; baseline tracking record in docs/outcome-tracking.md.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

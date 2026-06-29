@@ -1,0 +1,33 @@
+{
+  "id": "math-manip-code-003",
+  "title": "Counters generator (two-colour + plain)",
+  "project": "math-manipulatives-printables",
+  "type": "code",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["education", "mathematics", "open-content", "tooling"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Counters are among the simplest and most widely used manipulatives for early number sense, addition, subtraction, and multiplication arrays. Two-colour counters (red/yellow or equivalent colour-blind-safe pair) let learners model signed numbers and two-group problems. Plain counters serve as generic counting tokens. Both variants must pass the verification harness and work in grayscale. This is the first non-fraction-tile generator built on the parametric engine.",
+  "objective": "Implement a counters generator module for the parametric generator engine that produces two-colour and plain counter sheets in all standard variants (paper sizes, colour modes, standard/large-print).",
+  "acceptanceCriteria": [
+    "Generates counter sheets for two-colour (colour-blind-safe pair, e.g. Okabe-Ito orange and blue) and plain variants.",
+    "Output PDFs pass the automated verification harness: counter diameters within tolerance; no colour-only encoding (colour and shape/pattern distinguish the two sides in the two-colour variant).",
+    "Generates all standard variants: A4/Letter x colour/grayscale/ink-saver x standard/large-print.",
+    "Counters per sheet is configurable via the spec; default sheet fills the printable area at a specified diameter.",
+    "MIT-licensed; all commits DCO-signed; passes pnpm build, pnpm test, and CI verification gate."
+  ],
+  "resources": [
+    "tasks/math-manip-code-001.json -- parametric generator engine to build on",
+    "tasks/math-manip-code-002.json -- verification harness",
+    "tasks/math-manip-style-001.json -- style guide v1",
+    "tasks/math-manip-design-002.json -- colour-blind-safe palette"
+  ],
+  "output": "A counters generator module integrated into the generator engine package, with a spec file (specs/counters.spec.json) and example output PDFs, in a pull request, MIT-licensed.",
+  "requestor": "jdev1977",
+  "verifiedNeed": true,
+  "outputLicense": "MIT"
+}

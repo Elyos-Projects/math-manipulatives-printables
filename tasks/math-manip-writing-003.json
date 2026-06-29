@@ -1,0 +1,31 @@
+{
+  "id": "math-manip-writing-003",
+  "title": "Teacher quick-start guides per manipulative family",
+  "project": "math-manipulatives-printables",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["education", "mathematics", "open-content"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Teachers, tutors, and homeschooling caregivers who download a manipulative set often need a brief activity guide to make immediate use of it. A quick-start guide suggests 2-4 introductory activities per family, explains the learning purpose in plain language, and gives tips for classroom management (e.g. how to organise cut pieces, storage ideas). These guides increase the likelihood that downloaded sets are actually used and that learners benefit.",
+  "objective": "Write a teacher quick-start guide for each of the four core manipulative families, reviewed by a math educator.",
+  "acceptanceCriteria": [
+    "Produces one guide per family (fraction tiles, counters, number lines, base-ten blocks), each suggesting 2-4 introductory activities appropriate for the target age range.",
+    "Each guide explains the learning purpose in plain, jargon-free language accessible to non-specialist caregivers.",
+    "Guides are non-prescriptive: they do not endorse any specific curriculum or pedagogy; activities are illustrative, not mandatory.",
+    "Guides are reviewed by a qualified math educator; reviewer recorded.",
+    "All four guides are published CC-BY-4.0 and linked from the distribution channel listing."
+  ],
+  "resources": [
+    "tasks/math-manip-data-002.json -- the four core families these guides accompany",
+    "tasks/math-manip-writing-002.json -- curriculum-standards mapping for context"
+  ],
+  "output": "Four quick-start guide documents (docs/guides/fraction-tiles-quickstart.md, counters-quickstart.md, number-lines-quickstart.md, base-ten-blocks-quickstart.md), CC-BY-4.0, with math-educator sign-off.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}
